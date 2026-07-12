@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="maggikaridabest">
-<meta name="dcterms.date" content="2026-04-07">
 
-<title>The Calculus Controversy</title>
+<title>MaggiKariDaBest - The Calculus Controversy</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Chapter_1.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,13 +42,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ff38ca5759cea8d2b4e40dc1c167d4da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -73,160 +70,139 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Newton vs Leibniz: The calculus war classrooms never teach</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MaggiKariDaBest - The Calculus Controversy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#intro"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C1"> 
+<span class="menu-text">Chapter 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C2"> 
+<span class="menu-text">Chapter 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C3"> 
+<span class="menu-text">Chapter 3</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C4"> 
+<span class="menu-text">Chapter 4</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C5"> 
+<span class="menu-text">Chapter 5</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C6"> 
+<span class="menu-text">Chapter 6</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C7"> 
+<span class="menu-text">Chapter 7</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C8"> 
+<span class="menu-text">Chapter 8</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#C9"> 
+<span class="menu-text">Chapter 9</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#outro"> 
+<span class="menu-text">Outro</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">The Calculus Controversy</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Newton vs Leibniz: The calculus war classrooms never teach</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 1: Looking Up for Answers…</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 2: The Ultimate Boss fight…</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 3: Enter Kepler: The Ultimate Grind Machine…</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 4 : Gotong-Royong Mode Activated…</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 5 : Quiet Genius, Dusty Drawer…</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 6 : An Elegant UI…</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 7 : Investigate Urself and Winning 100%</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 8 : Now You See Me, Now You Dont</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Chapter_9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 9 : The Limits Era</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./outro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Outro : The Final Merge</span></span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#newton-vs-leibniz-the-calculus-war-classrooms-never-teach" id="toc-newton-vs-leibniz-the-calculus-war-classrooms-never-teach" class="nav-link active" data-scroll-target="#newton-vs-leibniz-the-calculus-war-classrooms-never-teach"><span class="header-section-number">1</span> Newton vs Leibniz: The calculus war classrooms never teach</a></li>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Newton vs Leibniz: The calculus war classrooms never teach</a></li>
+  <li><a href="#C1" id="toc-C1" class="nav-link" data-scroll-target="#C1">Chapter 1: Looking Up for Answers…</a></li>
+  <li><a href="#C2" id="toc-C2" class="nav-link" data-scroll-target="#C2">Chapter 2: The Ultimate Boss fight…</a></li>
+  <li><a href="#C3" id="toc-C3" class="nav-link" data-scroll-target="#C3">Chapter 3: Enter Kepler: The Ultimate Grind Machine…</a></li>
+  <li><a href="#C4" id="toc-C4" class="nav-link" data-scroll-target="#C4">Chapter 4 : Gotong-Royong Mode Activated…</a></li>
+  <li><a href="#C5" id="toc-C5" class="nav-link" data-scroll-target="#C5">Chapter 5 : Quiet Genius, Dusty Drawer…</a></li>
+  <li><a href="#C6" id="toc-C6" class="nav-link" data-scroll-target="#C6">Chapter 6 : An Elegant UI…</a></li>
+  <li><a href="#C7" id="toc-C7" class="nav-link" data-scroll-target="#C7">Chapter 7 : Investigate Urself and Winning 100%…</a></li>
+  <li><a href="#C8" id="toc-C8" class="nav-link" data-scroll-target="#C8">Chapter 8 : Now You See Me, Now You Dont…</a></li>
+  <li><a href="#C9" id="toc-C9" class="nav-link" data-scroll-target="#C9">Chapter 9 : The Limits Era…</a></li>
+  <li><a href="#outro" id="toc-outro" class="nav-link" data-scroll-target="#outro">Outro : The Final Merge</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">The Calculus Controversy</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>maggikaridabest </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 7, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="newton-vs-leibniz-the-calculus-war-classrooms-never-teach" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Newton vs Leibniz: The calculus war classrooms never teach</h1>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Newton vs Leibniz: The calculus war classrooms never teach</h2>
 <p>If you had to pick the biggest copyright fight in the history of mathematics, it wouldn’t be some boring plagiarism story.&nbsp;</p>
 <p>It would be :&nbsp;</p>
 <p><strong>Who is the mother of calculus?</strong>&nbsp;</p>
@@ -251,6 +227,237 @@ ul.task-list li input[type="checkbox"] {
 <p>British mathematicians even left the “group chat”. To support Newton, they basically gave Europe the academic cold shoulder.&nbsp;</p>
 <p>Before the two final bosses enter the arena and start their legendary math beef, we need to ask a simple question:&nbsp;</p>
 <p>Why did 17th-century humans feel the urgent to invent Calculus? What kind of bugs were they trying to fix?</p>
+</section>
+<section id="C1" class="level2">
+<h2 class="anchored" data-anchor-id="C1">Chapter 1: Looking Up for Answers…</h2>
+<p>The biggest difference between people back then and people nowadays comes down to what occupies our minds,</p>
+<p>People today: <em>“Later eat what? Mcd or Chicken Rice”</em></p>
+<p><img src="images/latereatwhat.jpg" class="img-fluid" width="1367"></p>
+<p>People in the 17th century: <em>“How exactly did God design the universe?”</em></p>
+<p>Back then, religion in Europe was a super big deal. Most scientists last time truly believed that the universe was not some random accident happen one.</p>
+<p>Instead, they thought God was the ultimate architect who carefully designed everything</p>
+<p><img src="images/god_generate.png" class="img-fluid"></p>
+<p>Those scientists last time all had one ultimate endgame quest, like the final boss level in a game.They looked up and wondered:</p>
+<p><em>Why don’t planets just randomly fly off into deep space? Like, why they don’t simply escape and disappear?</em></p>
+<p><em>Why is the Moon always “sims” behind the Earth? Always following us everywhere like a loyal sidekick, never leaving our side.</em></p>
+<p><em>And why do planets orbit the Sun with what looks like suspiciously perfect stability? So steady, no crashing, no drifting. Everything perfectly on track, like a flawless train schedule.</em></p>
+<p><img src="images/yeeeeeet.png" class="img-fluid" width="1367"></p>
+<p>If you could answer these questions, Yay ! —you had cracked the source code of the universe.</p>
+<p>At that time, many scientists were also super religious, got heavy background one. So studying nature wasn’t just boring science only. It was basically trying to sneak a peek into God’s dev tools and source code without getting a permanent ban from the server.</p>
+<p><img src="images/kenaban.png" class="img-fluid" width="1367"></p>
+<p>And whoever managed to crack that system first wasn’t just a normal scientist anymore. They auto promoted to become the ultimate reality hackers—basically the Big Boss system administrators of physics itself.</p>
+<p>But the problem is, if you want to crack a source code, you need a proper test file to run experiments on. You cannot simply test on the live server, later server crash.</p>
+<p>Luckily for them, they didn’t have to look very far or find trouble. They just looked up at the night sky and found a massive dataset already running flawlessly in production which is the planetary motion.</p>
+</section>
+<section id="C2" class="level2">
+<h2 class="anchored" data-anchor-id="C2">Chapter 2: The Ultimate Boss fight…</h2>
+<p>That’s when one of the biggest architecture debates in early science broke out.</p>
+<p>Was the universe running on an Earth-centered model? Or a Sun-centered model?</p>
+<p><img src="images/pic2.png" class="img-fluid"></p>
+<p>In other words, was Earth the center of the entire system, or just another local node orbiting a much larger compute unit?</p>
+<p>Back then, the fellas supporting the Sun-centered model were basically getting roasted every single day—and I mean literal roasting.</p>
+<p>Case in point: an Italian philosopher and mathematician named Giordano Bruno. This guy was literally “roasted” alive at the stake in Rome’s market square. Why? Just because he took the Sun-centered idea and used it to aggressively troll the religious establishment.</p>
+<p><img src="images/roasted.jpg" class="img-fluid"></p>
+<p>The Earth-centered model had been patched and maintained by generations of legacy scholars for over a thousand years. Even though it sucked with crazy bloated code, it still ran…… more or less, acceptable lah.</p>
+<p>On the other hand, the Sun-centered model looked like a much cleaner, more elegant architecture. But there was a catch: you had to prove it with reliable evidence.</p>
+<p>You had to take your new system and accurately predict exactly where a planet would be next.</p>
+<p>Under this brutal test dataset, the scientific world did not believe in tears, and they didn’t give a fxxk about a beautiful Canva presentation. What mattered was the real output.</p>
+<p>If you could accurately predict where a planet would be in the next moment, you were the strongest person on Earth, the ultimate big boss of science.</p>
+<p>But if you couldn’t, then no matter how beautifully you presented the Sun-centered model, it was still just unoptimized hype,all sembang only, no substance.</p>
+</section>
+<section id="C3" class="level2">
+<h2 class="anchored" data-anchor-id="C3">Chapter 3: Enter Kepler: The Ultimate Grind Machine…</h2>
+<p>Just when everyone was getting completely burned out and exhausted by these brutal benchmark tests, a German astronomer named Kepler stepped into the chat.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/kepler.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="266"></p>
+</figure>
+</div>
+<p>He was the ultimate grind machine of science—the kind of hardcore developer who doesn’t sleep, doesn’t rest, and can spend six straight years obsessing over something as chaotic as Mars’ orbit.</p>
+<p>By filling thousands of pages of scratch paper, he managed to push the new architecture forward in a critical way.</p>
+<p>He eventually formulated the famous laws of planetary motion. His second law basically stated this: planets sweep out equal areas in equal amounts of time.</p>
+<p>Suddenly, those supporting the Sun-centered model felt like the sun had finally come out, got hope already. The core logic worked; the architecture held.</p>
+<p>But just as mathematicians excitedly spread out their papers, ready to turn this into a clean predictive formula, the room collectively hit a “smile to soul-exit” like senyum tapi jiwa dah terbang moment.</p>
+<p>Wait, what? The orbit… is an ellipse?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wtf.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>This irregular, curved shape… where exactly is the formula supposed to come from?</p>
+<p>Because mathematical tools at the time were severely underdeveloped, a whole pile of long-standing legacy bugs started flooding everyone’s To-Do list:</p>
+<p>1.Find out why planets move in ellipses<br>
+2.Invent new math branches (Develop Calculus)<br>
+3.To Crack “Kepler Equation”<br>
+4.The Multi-Body Problem</p>
+<p>…..</p>
+<p>Back then, the table of contents of a thick geometry textbook was basically what drove countless brilliant minds to exhaustion—a “10,000 Whys” problem set in disguise.</p>
+<p>It wasn’t that people weren’t smart enough. It was simply that they didn’t have the right programming tools to work with.</p>
+<p>Geometry and algebra at the time were mostly static systems, while the world they were trying to describe was full of dynamic, real-time change.</p>
+<p>Trying to handle that with existing tools was like using a plastic toy shovel to dig the Mariana Trench. Cannot lah, the tools were totally not built for the job.</p>
+<p>So, the entire European scientific community got stuck in place, collectively screaming for a god-tier productivity tool that could finally handle change over time.</p>
+</section>
+<section id="C4" class="level2">
+<h2 class="anchored" data-anchor-id="C4">Chapter 4 : Gotong-Royong Mode Activated…</h2>
+<p>In an era when even calculators didn’t exist, the idea that a single lone genius could suddenly “have a flash of insight” and save the world was simply unrealistic.&nbsp;</p>
+<p>Faced with this universe-level bug that had effectively caused everyone to jam and stop moving, the entire European mathematical community quietly formed a massive, decades-long “grind squad” and started brute-forcing the problem.</p>
+<p>Since doing it solo wasn’t working, the top “hackers” of Europe naturally shifted into an open-source collaboration mode.</p>
+<p>Everyone took on different tasks, frantically contributing modules to the shared codebase, trying to build this god-tier tool through pure crowd power and gotong royong spirit.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fixit.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Fermat focused on one direction and essentially extracted the “tangent module” by force.&nbsp;</p>
+<p>Descartes rebuilt the foundation layer and shipped analytic geometry as a core system upgrade, like a major OS update.</p>
+<p>Kepler and Cavalieri acted as frontline stress testers, pushing hard against the concept of infinitesimals—basically trying to break the system to see how small the data could go.</p>
+<p>Barrow and Wallis kept pushing continuous contributions and iterative patches, <em>non-stop</em> updating the repo.</p>
+<p>It was like everyone was jointly assembling an enormous, impossible jigsaw puzzle.&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/assemble.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>By the mid-17th century, everyone rubbed their red, sleep-deprived eyes and suddenly realized in shock.&nbsp;</p>
+<p>Eh, wow! The puzzle was already about 99% complete.</p>
+<p>Everything was in place. The isolated algorithm modules were already built. All that was missing was the final step, integrating everything into a unified calculus framework.&nbsp;</p>
+<p>And the next two characters to enter the chat would each, in their own genius and rivalry-driven way, finally commit the last one percent of the code.&nbsp;</p>
+<p>They were&nbsp;&nbsp;</p>
+<p>Isaac Newton,</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/newton.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p>the backend overlord of England’s academic world,</p>
+<p>and Gottfried Wilhelm Leibniz,</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/leibniz.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="302"></p>
+</figure>
+</div>
+<p>the full stack frontend genius from Germany.&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-736009260.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="677"></p>
+</figure>
+</div>
+</section>
+<section id="C5" class="level2">
+<h2 class="anchored" data-anchor-id="C5">Chapter 5 : Quiet Genius, Dusty Drawer…</h2>
+<p>In the hot, tense summer of 1665, a super devastating guest arrived on the shores of England.</p>
+<p>The Great Plague was sweeping through London, turning bustling streets into ghost towns marked with red crosses.</p>
+<p>Seeking safety, Cambridge University decided to tutup kedai temporarily, they packed up the faculty and sent all the students packing.</p>
+<p>Among those fleeing the contagion was a quiet, slightly eccentric 22-year-old student. While most of his friends treated this forced hiatus as an unexpected long holiday—or a miserable pause on their futures—this young guy just packed his notebooks, headed back to his family’s isolated manor at Woolsthorpe, and casually embarked on what would become the most ridiculously productive gap year in human history.</p>
+<p>His name was Isaac Newton.</p>
+<p><img src="images/pic6.png" class="img-fluid"></p>
+<p>Newton&nbsp;viewed quantities as continuously flowing. He called a changing quantity a Fluent, and its rate of change a&nbsp;Fluxion.</p>
+<p>As you can see, he had already built most of the foundations of calculus during his WFH quarantine. But Newton had one fatal flaw that makes zero sense to us nowadays: He absolutely hated publishing.</p>
+<p>After finishing his master-level work, he didn’t post it online or share it with the community. He simply locked the manuscripts deep inside a drawer = moved on to other research.</p>
+</section>
+<section id="C6" class="level2">
+<h2 class="anchored" data-anchor-id="C6">Chapter 6 : An Elegant UI…</h2>
+<p>While Newton’s manuscripts were still sitting quietly inside his drawer collecting dust, a German mathematician named Gottfried Wilhelm Leibniz suddenly appeared in the chat.</p>
+<p>At the time, he dunno that Newton had already developed a similar method, so he completely independently worked it out himself from scratch.</p>
+<p>Most importantly, Leibniz didn’t play hide-and-seek like Newton. He not only developed calculus independently, but also published his work immediately for the whole world to see.</p>
+<p>He also introduced a super elegant notation system that looked like this:</p>
+<p><span class="math display">\[\frac{dy}{dx}\qquad \qquad \int\]</span>These symbols are still used throughout the world today. The exact same ones you see in Liu Jie class.</p>
+<p>You could say that history experienced a giant <strong>Git conflict</strong>: two great mathematicians from different countries submitted their own calculus projects almost simultaneously.</p>
+<p>Newton wrote the hardcore backend core engine, while Leibniz independently built another implementation and designed the beautiful UI and clean syntax that mathematics classrooms around the world still use today.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-707571899.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="C7" class="level2">
+<h2 class="anchored" data-anchor-id="C7">Chapter 7 : Investigate Urself and Winning 100%…</h2>
+<p>Decades passed before Newton suddenly blinked, looked up from his experiments, and realized:</p>
+<p>“Wait… apasal does everyone in Europe think Leibniz invented calculus?”</p>
+<p>The British mathematical community instantly rallied behind their hometown hero, fiercely whispering,</p>
+<p>“Leibniz must have snuck a peek at Newton’s secret manuscripts! He’s a plagiarist!”</p>
+<p>The German side fired back with equal venom:</p>
+<p>“He discovered it completely independently! Your guy kept his math in a drawer; you don’t get to claim the crown now! Siapa cepat siapa dapat!”</p>
+<p>The mudslinging escalated until it threatened to tear European science apart. To stop the drama, the Royal Society of London stepped in. They promised to run a fair, official investigation to see who actually invented calculus first.</p>
+<p>They assembled an elite committee to meticulously “examine the sincerity of the Originals and compare the Copies therewith.” They promised a fair trial based purely on the historical timeline.</p>
+<p>But there was one hilarious and unbelievable problem.</p>
+<p>The leader of the Royal Society—the big boss who picked the committee members and secretly wrote the final report—was none other than Isaac Newton himself.</p>
+<p>Yes, you read that right! Newton acted as the judge, the jury, and the witness all at the same time. It is the most famous case in history of “investigating yourself.”</p>
+<p>Of course, after a “careful” review, Newton’s committee decided that Isaac Newton was the true winner and the only inventor of calculus. The rest of Europe could only stare in shock at this totally unfair trial.</p>
+<p>So, who really won?</p>
+<p>Today, history experts agree that both men were geniuses who figured out calculus completely on their own. Newton did it first in secret, but Leibniz was the one who actually shared it with the world.</p>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.2%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4055984109.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="399"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.1%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1530214684.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="398"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.6%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-934575608.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="404"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="C8" class="level2">
+<h2 class="anchored" data-anchor-id="C8">Chapter 8 : Now You See Me, Now You Dont…</h2>
+<p>Even though calculus was finally out in the open, mathematicians soon realized something was wrong. There was a major bug in the system</p>
+<p>.When finding a derivative, you had to use tiny, near-zero numbers called infinitesimals :</p>
+<p><span class="math display">\[\Delta x\]</span></p>
+<p>At the start of the math problem, these tiny numbers could not be zero, because you cannot divide by zero, the system auto crash if do like this.</p>
+<p>But mysteriously, by the end of the problem, those same numbers just seemed to disappear into thin air.</p>
+<p>An Irish philosopher and bishop named George Berkeley stepped forward and looked at the math. He asked a few simple, devastating questions:</p>
+<p>“Is <span class="math inline">\(\Delta x\)</span> actually zero? If it isn’t zero, why does it disappear? If it is zero, how can you divide by it?”</p>
+<p>Berkeley famously mocked these vanishing numbers, calling them the <strong>“Ghosts of departed quantities.”</strong></p>
+<p>The mathematical community fell completely silent. No one had a good answer. This officially started the <strong>Second Crisis in the Foundations of Mathematics</strong>.</p>
+<p>Everyone realized that while calculus gave the correct answer, the underlying code lacked a solid, logical foundation. It worked by luck, but the compiler shouldn’t have allowed it.</p>
+<p>Indefinedally, the next generation of mathematicians would step up to fix this bug. They would finally make calculus safe and logical using a new concept <strong>limits</strong> .</p>
+</section>
+<section id="C9" class="level2">
+<h2 class="anchored" data-anchor-id="C9">Chapter 9 : The Limits Era…</h2>
+<p>For a long time, nobody knew how to fix Bishop Berkeley’s ghost bug.</p>
+<p>The foundations of calculus were completely broken, and mathematicians were just crossing their fingers, and hoping their equations wouldn’t collapse into a pile of syntax errors. Solo attempts to solve the mystery just weren’t working.</p>
+<p>Eventually, the top math “hackers” of Europe naturally shifted into that classic open-source collaboration mode once again.</p>
+<p>Everyone took on different tasks, frantically contributing modules to the shared codebase, trying to build a god-tier logical tool through pure crowd power.</p>
+<p>They realized they finally needed to work together instead of gatekeeping their notes.</p>
+<p>Brilliant minds like Augustin-Louis Cauchy and Karl Weierstrass stepped up to the keyboard. They looked at the messy code and decided to throw away the confusing idea of “ghost numbers” entirely.</p>
+<p>Instead of asking what happens when <span class="math inline">\(\Delta x\)</span> <em>becomes</em> zero, they asked: <em>What happens as</em> <span class="math inline">\(\Delta x\)</span> gets closer and closer to zero, without ever actually touching it?</p>
+<p>With this single, genius pivot, they created the formal, bulletproof definition of limits.</p>
+<p>By working together and combining their massive braincells, the open-source mathematical community successfully patched the universe-level bug.</p>
+<p>They gave calculus the rock-solid, logical foundation it always deserved, turning Newton and Leibniz’s wild, experimental ideas into the most stable and powerful tool in modern science.</p>
+</section>
+<section id="outro" class="level2">
+<h2 class="anchored" data-anchor-id="outro">Outro : The Final Merge</h2>
+<p>Today, the calculus we learn in class looks like just another thick, heavy textbook, kinda that makes you want to cry when you look at the syllabus.</p>
+<p><img src="images/clipboard-3050712647.png" class="img-fluid" width="660"></p>
+<p>But it is actually the culmination of more than three hundred years of relentless, non-stop effort by countless mathematicians, physicists, and astronomers.</p>
+<p>It wasn’t the result of Newton having a sudden, magical stroke of genius one day while sitting under an apple tree</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-112368560.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<p>, nor was it the work of Leibniz alone.</p>
+<p>It was a magnificent, epic relay race run by generations of scientists. Newton and Leibniz simply stood on the shoulders of all the giants before them to take that final, monumental step and hit the Merge button.</p>
+<p>Because of calculus, humanity possessed for the very first time a precise language to describe motion, change, and the laws of nature.</p>
+<p>Because of calculus, humanity possessed for the very first time a precise language to describe motion, change, and the absolute laws of nature. From the elliptical orbits of planets to the launch of rockets; from electromagnetic fields to the complex optimization algorithms behind modern Artificial Intelligence, almost all of modern science is completely inseparable from calculus.</p>
+<p>Bak kata pepatah:</p>
+<blockquote class="blockquote">
+<p><strong>“If mathematics is a language, then calculus is humanity’s very first grammar book for reading the universe.”</strong></p>
+</blockquote>
 
 
 </section>
@@ -329,7 +536,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Nenenepupu\.github\.io\/maggikari\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -656,18 +863,10 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./Chapter_1.html" class="pagination-link" aria-label="Chapter 1: Looking Up for Answers...">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 1: Looking Up for Answers…</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
